@@ -21,11 +21,8 @@ Login Válido
     # Clicar no botão de login
     Click Element   css=#SubmitLogin > span
     
-    # Verificar se o login foi bem-sucedido (pode ser um elemento específico na página de login)
+    # Verificar se o login foi bem-sucedido 
     Wait Until Element Is Visible    css=#my-account
-
-    # Validar que o usuário está logado com sucesso (exemplo de verificação)
-    Page Should Contain Element    css=#my-account
-
+  
     # Fechar o navegador
     Close Browser
