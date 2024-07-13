@@ -29,7 +29,7 @@ Login Válido
     Input Text          id=customer_firstname   ${FIRST_NAME}
     Input Text          id=passwd               ${PASSWORD}
     Select From List By Value    id=days        ${DAYS_BIRTH}
-    Select From List By Value    css=#months > option:nth-child(9)      
+    Select From List By Value    xpath=//*[@id="months"]    ${MONTHS_BIRTH}
     Select From List By Value    id=years       ${YEAR_BIRTH}
     
     # Selecionar newsletter

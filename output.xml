@@ -1,68 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-12T19:14:07.841687" rpa="false" schemaversion="5">
-<suite id="s1" name="Testlogin" source="C:\Users\luana\OneDrive\Documentos\QUALITY ASSURANCE\PYTHON\Myshop\testlogin.robot">
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-13T12:49:57.793072" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcadastr" source="C:\Users\luana\OneDrive\Documentos\QUALITY ASSURANCE\FRONTEND\PYTHON\Myshop\testcadastr.robot">
 <test id="s1-t1" name="Login Válido" line="6">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-12T19:14:10.202166" level="INFO">Opening browser 'Chrome' to base url 'http://www.automationpractice.pl/index.php'.</msg>
+<msg time="2024-07-13T12:49:58.546547" level="INFO">Opening browser 'Chrome' to base url 'http://www.automationpractice.pl/index.php'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-12T19:14:10.202166" elapsed="21.132859"/>
+<status status="PASS" start="2024-07-13T12:49:58.546547" elapsed="15.243549"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-12T19:14:31.347307" elapsed="0.358801"/>
+<status status="PASS" start="2024-07-13T12:50:13.790096" elapsed="0.169150"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T19:14:31.810907" level="INFO">Clicking element 'css=#header .nav .header_user_info &gt; a'.</msg>
+<msg time="2024-07-13T12:50:13.959246" level="INFO">Clicking element 'css=#header .nav .header_user_info &gt; a'.</msg>
 <arg>css=#header .nav .header_user_info &gt; a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T19:14:31.810907" elapsed="2.155230"/>
+<status status="PASS" start="2024-07-13T12:50:13.959246" elapsed="2.321453"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-12T19:14:33.981065" level="INFO">Typing text 'luan-lopes71@gruposantin.com.br' into text field 'id=email'.</msg>
-<arg>id=email</arg>
-<arg>${VALID_EMAIL}</arg>
+<msg time="2024-07-13T12:50:16.296321" level="INFO">Typing text 'betina_fogaca@allianceconsultoria.com.br' into text field 'id=email_create'.</msg>
+<arg>id=email_create</arg>
+<arg>${EMAIL_CREATE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T19:14:33.978645" elapsed="0.822358"/>
+<status status="PASS" start="2024-07-13T12:50:16.296321" elapsed="1.061494"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-13T12:50:17.362321" level="INFO">Clicking element 'css=#SubmitCreate &gt; span'.</msg>
+<arg>css=#SubmitCreate &gt; span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-13T12:50:17.362321" elapsed="0.117294"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=id_gender2</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-13T12:50:17.479615" elapsed="1.769558"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-13T12:50:19.249173" level="INFO">Clicking element 'id=id_gender2'.</msg>
+<arg>id=id_gender2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-13T12:50:19.249173" elapsed="0.311350"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-12T19:14:34.801003" level="INFO">Typing text '123456' into text field 'id=passwd'.</msg>
+<msg time="2024-07-13T12:50:19.560523" level="INFO">Typing text 'Emilly Fogaça' into text field 'id=customer_lastname'.</msg>
+<arg>id=customer_lastname</arg>
+<arg>${LAST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-13T12:50:19.560523" elapsed="1.165332"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-13T12:50:20.725855" level="INFO">Typing text 'Betina Kamilly' into text field 'id=customer_firstname'.</msg>
+<arg>id=customer_firstname</arg>
+<arg>${FIRST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-13T12:50:20.725855" elapsed="0.638041"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-13T12:50:21.380958" level="INFO">Typing text '123456' into text field 'id=passwd'.</msg>
 <arg>id=passwd</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T19:14:34.801003" elapsed="0.253485"/>
+<status status="PASS" start="2024-07-13T12:50:21.380958" elapsed="0.533227"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-07-13T12:50:21.914185" level="INFO">Selecting options from selection list 'id=days' by value 19.</msg>
+<arg>id=days</arg>
+<arg>${DAYS_BIRTH}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-07-13T12:50:21.914185" elapsed="0.593751"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-07-13T12:50:23.471640" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-13T12:50:23.471640" level="FAIL">ValueError: No values given.</msg>
+<arg>css=#months &gt; option:nth-child(9)</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2024-07-13T12:50:22.507936" elapsed="1.010531">ValueError: No values given.</status>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>id=years</arg>
+<arg>${YEAR_BIRTH}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2024-07-13T12:50:23.518467" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T19:14:35.054488" level="INFO">Clicking element 'css=#SubmitLogin &gt; span'.</msg>
-<arg>css=#SubmitLogin &gt; span</arg>
+<arg>id=newsletter</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T19:14:35.054488" elapsed="1.539717"/>
+<status status="NOT RUN" start="2024-07-13T12:50:23.518467" elapsed="0.000000"/>
 </kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>css=#center_column &gt; h1</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-12T19:14:36.609825" elapsed="0.129153"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=#submitAccount &gt; span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-13T12:50:23.518467" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-07-12T19:14:36.738978" elapsed="2.915631"/>
+<status status="NOT RUN" start="2024-07-13T12:50:23.518467" elapsed="0.000000"/>
 </kw>
 <doc>Este caso de teste verifica o fluxo de login válido</doc>
 <tag>Login</tag>
-<status status="PASS" start="2024-07-12T19:14:10.147608" elapsed="29.507001"/>
+<status status="FAIL" start="2024-07-13T12:49:58.546547" elapsed="24.971920">ValueError: No values given.</status>
 </test>
-<status status="PASS" start="2024-07-12T19:14:07.904170" elapsed="31.750439"/>
+<status status="FAIL" start="2024-07-13T12:49:57.793072" elapsed="25.741016"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Login</stat>
+<stat pass="0" fail="1" skip="0">Login</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Testlogin">Testlogin</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testcadastr">Testcadastr</stat>
 </suite>
 </statistics>
 <errors>
